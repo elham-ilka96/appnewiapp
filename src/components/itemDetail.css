@@ -1,0 +1,237 @@
+.appPage2{
+  background-color:#ffff;
+  padding-top: 45px;
+}
+.backButton{
+ 
+  background-color:#ffff;
+    width: 22px;
+    height: 22px;
+    margin-right: 1315px;
+    
+    border: 1px solid #ffff;
+}
+  .viewNavigationBar{
+    margin-top: 13px;
+  }
+
+  .basicInfo{
+    display: flex;
+    flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  }
+  .appItems{
+    color: #111;
+  text-decoration: none;
+  }
+  .appIcon2Page {
+    width: 112px;
+    height: 112px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    border-radius: 28px;
+    overflow: hidden; /* بریدن بخش‌های اضافی تصویر */
+  }
+  
+  .appIcon2Page img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    
+  }
+  
+  
+
+  .details{
+    margin-right: 130px;
+    margin-top: -130px;
+  }
+  .details h1{
+font-size: 24px;
+  text-align: right;
+
+  }
+.categiryTitle{
+  margin-top:-20px;
+  color:#8e8e93;
+}
+
+  .appDownloadButton{
+    font-family: 'IranYekanWeb';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:-10px;
+}
+.appDownloadButton button{
+  text-align: center;
+  max-width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  margin-top: auto;
+  min-width: 75px;
+  background-color: #027aff;
+}
+.appRating{
+  
+  display: flex;
+  padding-left: 900px;
+ margin-top: 20px;
+
+}
+.rate{
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+  color: #8e8e93;
+  margin-bottom: -10px;
+  
+}
+.rateCount{
+  font-size: 14px;
+  color: #8e8e93;
+}
+.screenShot{
+  margin-top: 15px;
+  width: 100%;
+}
+.scroller{
+  
+  white-space: nowrap;
+  overflow: scroll;
+  margin-bottom: 20px;
+  padding-right: -10px;
+  padding-left: 15px;
+  margin-top: -10px;
+}
+.bishtar button{
+  background-color: #fff;
+  border:none;
+  font-size: 17px;
+  color: #027aff;
+  box-shadow: 0 4px 6px #fff(0, 0, 0, 0); /* سایه */
+  margin-right: 1270px;
+  font-family: 'IranYekanWeb';
+}
+.taghiratAkhrinNoskhe h1{
+  font-weight: 1;
+  font-size: 18px;
+  
+}
+.adadTaghirat{
+margin-top: -10px;
+color: #8e8e93;
+}
+.commentsSection h1{
+
+  font-size: 18px;
+}
+.commentsSection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -8px;
+}
+
+.ratingsOverview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.averageRating {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+
+.userComments {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #fff;
+  padding: 15px;
+ 
+
+}
+.ratingsBreakdown {
+  background-color: #fff;
+  
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.setareAndLine{
+  display: block;
+  align-items: center; 
+  width: 1000px;
+  height: auto;
+  margin-bottom: -12px;
+  
+}
+.lineSaf{
+  width: 700px;
+  height: 3px;
+  flex: 1;
+  background-color: #f6f8f2;
+  position: relative;
+}
+.lineSafTopor {
+  height: 100%;
+  background: #8e8e93;
+}
+.starRang2{
+  color: #8e8e93;
+margin-right: 720px;
+position: relative;
+top: -7px; 
+padding-top: -10px;
+}
+.commentRate{
+  font-size: 50px;
+  margin-right: 1200px;
+  margin-top: -100px;
+}
+.az1Emtiaz{
+  margin-right: 1200px;
+  margin-top: -60px;
+  color: #8e8e93;
+}
+.etelatBarname{
+  margin-top: 20px;
+}
+.sazgari{
+  color: #8e8e93;
+  margin-top: 50px;
+}
+.sazgariBa{
+  margin-right: 1200px;
+  margin-top: -40px;
+  font-size: 18px;
+}
+.writeReview a{ 
+  font-size: 17px;
+      font-weight: 700;
+      text-align: right;
+      color: #027aff;
+      text-decoration: none;
+  }
+  .writeReview  img{
+      padding-left: 5px;
+      margin-bottom: -6px;
+  }
+  .alaki{
+    margin-top: 500px;
+  }

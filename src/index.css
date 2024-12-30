@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+    margin: 0;
+    font-family: 'IranYekanWeb', Arial, sans-serif;
+    background-color: #fff;
+    direction: rtl;
+    text-align: right;
+  }
+  @font-face {
+    font-family: 'IranYekanWeb';
+    src: url('https://app.iapps.ir/fonts/woff/iranyekanwebregularfanum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
