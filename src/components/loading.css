@@ -1,0 +1,51 @@
+/* Loading.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    text-align: center;
+  }
+  
+  .dots {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(14, 146, 235);
+    border-radius: 60%;
+    animation: fade 1.5s infinite;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .dot:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .dot:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .dot:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  @keyframes fade {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  p {
+    font-size: 18px;
+    color: #928c8c;
+  }
+  

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import "./itemDetail.css";
+import Loading from "./loading";
+import TwoToolBar from "./twoToolBar/twoToolBar";
 
 function ItemDetail() {
   const { state } = useLocation();
@@ -117,7 +119,7 @@ function ItemDetail() {
   }
 
 
-  if (loading) return <div>در حال بارگذاری...</div>;
+  if (loading) return <Loading/>;
   if (error) return <div>{error}</div>;
 
   const convertToFarsiNumber = (number) => {
@@ -149,6 +151,9 @@ function ItemDetail() {
       </a>
 
     <div className="appPage2">
+
+     {/* فراخوانی نوار ابزار */}
+     <TwoToolBar icons={icons} />
       
       <div className="basicInfo">
         <div className="appItems">

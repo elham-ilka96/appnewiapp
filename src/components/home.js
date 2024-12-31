@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./home.css";
 import ToolBar from "./ToolBar";
+import Loading from "./loading";
+
 
 
 function Home() {
@@ -30,7 +32,7 @@ function Home() {
   }
 
   if (!data) {
-    return <div className="loading">در حال بارگذاری...</div>;
+    return <Loading />;
   }
 
   return (
