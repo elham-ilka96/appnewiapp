@@ -6,6 +6,9 @@ import './App.css';
 import BoxLapps from "./feacherApp/boxLapps";
 import TabBar from "./components/tabBar/tabBar";
 import ContactPage from "./feacherApp/contactPage";
+import Games1 from "./Home/games1";
+import Search1 from "./Home/search1";
+import Barnameha from "./Home/Barnameha";
 
 function App() {
   return (
@@ -14,6 +17,10 @@ function App() {
       <Routes>
         {/* صفحه اصلی */}
         <Route path="/" element={<Home />} />
+        <Route path="/Apps" element={<Barnameha />} />
+        <Route path="/games" element={<Games1 />} />
+        <Route path="/search" element={<Search1 />} />
+       
         {/* صفحه جزئیات */}
         <Route path="/item-detail" element={<ItemDetail />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -29,7 +36,7 @@ function ConditionalBoxLapps() {
 
  
   // if for page 2=> TabBar, if page "/" => BoxLapps 
-  if (location.pathname === "/") {
+  if (["/", "/apps", "/search", "/contact", "/games"].includes(location.pathname)) {
     return <TabBar />;
   }
 if (location.pathname === "/item-detail") {

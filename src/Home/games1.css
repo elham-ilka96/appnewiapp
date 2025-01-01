@@ -1,0 +1,187 @@
+
+
+.bannerSection{
+    margin-left: -1000px;
+        padding-right: 10px;
+     background-color:#fff;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        direction: rtl;
+        display: flex;
+      
+        overflow-x: scroll;
+        white-space: nowrap;
+        
+        
+    }
+    
+    
+    
+    .swiperSlide{
+      transition-duration: 0ms; 
+      transform: translate3d(-20px, 0px, 0px);
+      width: 186.667px;
+      margin-left: 270px;
+      margin-top: 50px;
+      margin-right: -10px;
+      
+    }
+    
+    .banner {
+      display: inline-table;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      direction: rtl;
+      text-align: right;
+    
+    margin-top: -30px;
+    padding-top: -10px;
+    padding-right: 5px;
+    }
+      
+    
+    .labelBanner {
+        font-size: 11px;
+        font-weight: 550;
+        
+        color: #027aff;
+        margin-top: -10px;
+       
+       
+    }
+     h3{
+    font-size: 22px;
+    max-width: 90vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color:#111;
+    margin-top: -11px;
+    margin-bottom: -15px;
+    
+    }
+    .swiperSlide h2{
+    margin-Block-Start: '0.83em';
+    margin-Block-End: '0.83em';
+    margin-Inline-Start: '0px';
+    margin-Inline-End: '0px';
+    font-Weight: bold;
+    
+    }
+    .subtitleBanner{
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #8e8e93;
+    
+    }
+    
+    .banner img{
+        margin-top: 5px;
+        border-radius: 14px;
+        background-color: #eee;
+        border: 1px solid #eee;
+        min-height: calc(25.64103vw - 34.61538px);
+       
+    }
+    .separator2{
+      border: 1px solid #eee;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 6px;
+    }
+    
+    .appListingSection {
+        margin: 0px 20px;  
+      }
+      .appListingSection p{
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 0px;
+      }
+      .bishtarHome{
+        text-decoration: none;
+        margin-bottom: 20px;
+        margin-right: 1270px;
+        color: #027aff;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .appGrid {
+      
+        
+      flex-wrap: wrap; /* برای جلوگیری از خروج آیتم‌ها از صفحه */
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* پنج ستون در هر سطر */
+      grid-gap: 20px; /* فاصله بین کارت‌ها */
+      
+      max-width: 3000px;
+        white-space: nowrap;
+        padding-bottom: 15px;
+      }
+      
+      .appCard {
+        display: flex;
+        align-items: center; /* تراز وسط عمودی متن و تصویر */
+        width: 450px;
+        padding: 5px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        background-color: #fff;
+        gap: 0px; /* فاصله بین تصویر و متن */
+      }
+      .appDowBuHome1{
+        font-family: 'IranYekanWeb';
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top:0px;
+    }
+    .appDowBuHome1 button{
+      text-align: center;
+      width: 75px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: #f2f2f8;
+      border: none;
+     
+      font-size: 13px;
+      font-weight: 700;
+      color: #027aff;
+    }
+      .appCard img{
+        border-radius: 14px;
+        width: 70px;
+        margin-left: 10px;
+      }
+      
+      .appIcon {
+        margin-bottom: 10px;
+        width: 80px;
+        height: 80px;
+        object-fit: cover; /* برش مناسب تصویر */
+        border-radius: 4px;
+      }
+      
+      .appInfo {
+        flex: 1; /* فضای باقیمانده را برای متن بگیرد */
+        text-align:right; /* متن به سمت چپ تراز شود */
+      }
+      
+      .appInfo h3 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: 500;
+      }
+      
+      .appInfo p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0 0 0;
+      }
+      
+    
+     
+      
+      
+      
+    
