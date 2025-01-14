@@ -1,0 +1,24 @@
+ .trends {
+    padding-top: 90px;
+    
+  
+}
+ h2{
+    font-size: 22px;
+    margin-top: 50px;
+    margin-right: 15px;
+    
+}
+.searchTrend{
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    font-size: 17px;
+    color: #027aff;
+    margin-right: 10px;
+    margin-top: -35px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin-left: 0px;
+   margin-left: -1150px;
+}
