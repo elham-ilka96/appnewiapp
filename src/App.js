@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
 import Home from "./components/home";
 import ItemDetail from "./components/ItemDetail";
+import ItemDetail2 from "./components/itemDetail2";
 import './App.css';
 import BoxLapps from "./feacherApp/boxLapps";
 import TabBar from "./components/tabBar/tabBar";
@@ -11,6 +12,8 @@ import Search1 from "./Home/search1";
 import SearchItemDetail from "./Home/searchItemDetail";
 import Barnameha from "./Home/Barnameha";
 
+
+
 function App() {
   return (
     <Router>
@@ -18,6 +21,7 @@ function App() {
       <Routes>
         {/* صفحه اصلی */}
         <Route path="/" element={<Home />} />
+        <Route path="/vitrin" element={<Home />} />
         <Route path="/Apps" element={<Barnameha />} />
         <Route path="/games" element={<Games1 />} />
         <Route path="/search" element={<Search1 />} />
@@ -25,6 +29,8 @@ function App() {
         {/* صفحه جزئیات */}
         <Route path="/item-detail" element={<ItemDetail />} />
         <Route path="/searchItemDetail/:slug" element={<SearchItemDetail />} />
+        <Route path="/item-detail2" element={<ItemDetail2 />} />
+        
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       {/* نمایش شرطی BoxLapps */}
@@ -38,10 +44,10 @@ function ConditionalBoxLapps() {
 
  
   // if for page 2=> TabBar, if page "/" => BoxLapps 
-  if (["/", "/apps", "/search", "/contact", "/games", "/searchItemDetail"].includes(location.pathname)) {
+  if (["/","/vitrin", "/apps", "/search", "/contact", "/games", "/searchItemDetail"].includes(location.pathname)) {
     return <TabBar />;
   }
-if (location.pathname === "/item-detail") {
+if (location.pathname === "/item-detail2") {
   return <BoxLapps />;
 }
 }

@@ -7,20 +7,22 @@ const Toolbar = () => {
     const [searchTerm, setSearchTerm] = useState(''); // مدیریت state جستجو
     const location = useLocation();
 
+    const isSearchItemDetail = /^\/searchItemDetail\/[^/]+$/.test(location.pathname);
+
     // تعریف تابع getTitle در بالا
     const getTitle = () => {
         if (location.pathname === "/games") {
             return { text: "بازی ها", className: "title-games" };
        
-        } else if (location.pathname === "/searchItemDetail" || "/search") {
+        } else if (location.pathname === "/search"|| isSearchItemDetail ) {
             return { text: "جستجو", className: "title-search" };
         } else if (location.pathname === "/contact") {
             return { text: "حساب کاربری", className: "title-contact" };
         } else if (location.pathname === "/apps") {
             return { text: "برنامه ها", className: "title-apps" };
-        } else {
-            return { text: "ویترین", className: "title-default" };
-        }
+        } else if (location.pathname === "/"|| "/vitrin") 
+            return { text: "ویترین", className: "title-dafault" };
+    
     };
 
     const { text, className } = getTitle(); // حالا بدون مشکل استفاده می‌شود
@@ -37,6 +39,9 @@ const Toolbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    
+
 
     return (
         <header className="toolbar">
@@ -63,7 +68,7 @@ const Toolbar = () => {
 
                 {/* نمایش اینپوت فقط در صفحه جستجو */}
                 <div className="buttonSearchBase">
-                     {(location.pathname === "/search" ||  "/searchItemDetail") && (
+                     {(location.pathname === "/search" || isSearchItemDetail) && (
                         <form>
                          <input
                          type="text"
@@ -78,6 +83,7 @@ const Toolbar = () => {
         </form>
     )}
 </div>
+
 
             </div>
             <hr className="separator" />

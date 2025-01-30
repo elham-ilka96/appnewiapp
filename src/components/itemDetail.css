@@ -15,14 +15,14 @@
     margin-top: 13px;
   }
 
-  .basicInfo{
+  .basicInfo2{
     display: flex;
     flex-wrap: wrap;
   padding-right: 15px;
   padding-left: 15px;
 
   }
-  .appItems{
+  .appItems2{
     color: #111;
   text-decoration: none;
   }
@@ -48,42 +48,46 @@
 
   .details{
     margin-right: 130px;
-    margin-top: -130px;
+    margin-top: -128px;
   }
   .details h1{
-font-size: 24px;
+font-size: 23px;
   text-align: right;
 
   }
-.categiryTitle{
-  margin-top:-20px;
+.details p{
+  margin-top:-15px;
   color:#8e8e93;
+  font-size: 14px;
 }
 
-  .appDownloadButton{
+  .appDownloadButton2{
     font-family: 'IranYekanWeb';
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top:-10px;
+  
 }
-.appDownloadButton button{
+#appDownloadButton2 {
   text-align: center;
   max-width: 75px;
   height: 30px;
   border-radius: 15px;
   border: none;
   color: #fff;
-  font-size: 14px;
-  margin-top: auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
   min-width: 75px;
   background-color: #027aff;
 }
-.appRating{
+.appRating2{
   
   display: flex;
-  padding-left: 900px;
- margin-top: 20px;
+  padding-left: 945px;
+ margin-right: 18px;
+ margin-top: 25px;
 
 }
 .rate{
@@ -109,9 +113,18 @@ font-size: 24px;
   margin-bottom: 20px;
   padding-right: -10px;
   padding-left: 15px;
-  margin-top: -10px;
+  margin-top: -18px;
 }
 .bishtar button{
+  background-color: #fff;
+  border:none;
+  font-size: 17px;
+  color: #027aff;
+  box-shadow: 0 4px 6px #fff(0, 0, 0, 0); /* سایه */
+  margin-right: 1270px;
+  font-family: 'IranYekanWeb';
+}
+.toggleButton{
   background-color: #fff;
   border:none;
   font-size: 17px;
@@ -200,6 +213,7 @@ top: -7px;
 padding-top: -10px;
 }
 .commentRate{
+  color: #111;
   font-size: 50px;
   margin-right: 1200px;
   margin-top: -100px;
@@ -221,6 +235,9 @@ padding-top: -10px;
   margin-top: -40px;
   font-size: 18px;
 }
+.writeReview{
+  padding-top: 15px;
+}
 .writeReview a{ 
   font-size: 17px;
       font-weight: 700;
@@ -232,6 +249,24 @@ padding-top: -10px;
       padding-left: 5px;
       margin-bottom: -6px;
   }
-  .alaki{
-    margin-top: 500px;
-  }
+.information2{
+  margin-top: 25px;
+  margin-right: 5px;
+  
+}
+.information2 p{
+  font-size: 18px;
+  color: #111;
+}
+.sazgari2 p{
+  color: #8e8e93;
+  font-size: 15px;
+}
+.sazgari2 span{
+  color: #111;
+  font-size: 18px;
+  text-align: left;   /* متن را در انتهای خط (سمت چپ) قرار می‌دهد */
+  direction: rtl;     /* حفظ راست‌چین بودن زبان فارسی */
+  display: block;  
+  margin-left: 5px;
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./twoToolBar.css";
 
-const TwoToolBar = ({ icons }) => {
+const TwoToolBar = ({ iconFileId }) => {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -33,23 +33,23 @@ const TwoToolBar = ({ icons }) => {
           className="viewNavigationBar2"
         />
       </a>
-    
-      {icons.length > 0 && (
+
+      {iconFileId && (
         <div className="appItems">
-          {icons.map((iconUrl, index) => (
-            <div className="appIcon2PageToolbar" key={index}>
-              <img src={iconUrl} alt={`Icon ${index}`} />
-            </div>
-          ))}
+          <div className="appIcon2PageToolbar">
+            <img
+              src={`https://static.iapps.ir/apps/file/image/${iconFileId}/112x112.jpg`}
+              alt="App Icon"
+            />
+          </div>
         </div>
       )}
 
       <div className="appDownloadButton2Tool">
-        <button type="button" id="app-download-button" className="buttonTool">
+        <button type="button" id="appDownloadButton2">
           دریافت
         </button>
       </div>
-      
     </div>
   );
 };
